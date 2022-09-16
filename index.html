@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div id="wrapper">
+    <table id="table_dec" align='center' cellspacing=2 id="data_table" border=10>
+    <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+    </tr>
+    
+    <tr id="row1">
+    <td class="data" id="col1_row1"></td>
+    <td class="data" id="col2_row1"></td>
+    <td class="data" id="col3_row1"></td>
+    <td>
+    <input type="button" id="edit_btn1" value="Edit" class="edit" onclick="edit_row('1')">
+    <input type="button" id="save_btn1" value="Save" class="save" onclick="save_row('1')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+    </td>
+    </tr>
+    
+    <tr id="row2">
+    <td class="data" id="col1_row2"></td>
+    <td class="data" id="col2_row2"></td>
+    <td class="data" id="col3_row2"></td>
+    <td>
+    <input type="button" id="edit_btn2" value="Edit" class="edit" onclick="edit_row('2')">
+    <input type="button" id="save_btn2" value="Save" class="save" onclick="save_row('2')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+    </td>
+    </tr>
+    
+    <tr id="row3">
+    <td class="data" id="col1_row3"></td>
+    <td class="data" id="col2_row3"></td>
+    <td class="data" id="col3_row3"></td>
+    <td>
+    <input type="button" id="edit_btn3" value="Edit" class="edit" onclick="edit_row('3')">
+    <input type="button" id="save_btn3" value="Save" class="save" onclick="save_row('3')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+    </td>
+    </tr>
+    
+    <tr>
+    <td><input type="text" id="new_col1"></td>
+    <td><input type="text" id="new_col2"></td>
+    <td><input type="text" id="new_col3"></td>
+    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+    <td><input type="button" class="add_all" onclick="add_all()" value="Add All"></td>
+    </tr>
+    
+    </table>
+    </div>
+    </body>
+    </html>
